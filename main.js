@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         newRecord.textContent = record;
+        attempts = 0;
     }
 
     function restartGame() {
@@ -72,4 +73,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     checkBtn.addEventListener('click', checkNumber);
+
 });
