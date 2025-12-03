@@ -52,7 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         newRecord.textContent = record;
-        attempts = 0;
     }
 
     function restartGame() {
@@ -62,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         cardGame.classList.add('visible');
         cardWin.classList.remove('visible');
+        attempts = 0;
     }
 
     restartBtn.addEventListener('click', restartGame)
@@ -75,3 +75,4 @@ document.addEventListener('DOMContentLoaded', () => {
     checkBtn.addEventListener('click', checkNumber);
 
 });
+
